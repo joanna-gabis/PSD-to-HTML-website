@@ -20,10 +20,10 @@
                 <li><a href="#">galeria</a></li>
                 <li><a href="#" id="ofirmie">o firmie</a>
                     <div class="submenu">
-                        <ul>
-                            <li>Aktualności</li>
-                            <li>Nasz team</li>
-                            <li>Historia</li>
+                        <ul class="ulsubmenu">
+                            <li><a href="#">Aktualności</a></li>
+                            <li><a href="#">Nasz team</a></li>
+                            <li><a href="#">Historia</a></li>
                         </ul>
                     </div>
                 </li>
@@ -55,8 +55,8 @@
     <section>
     <div class="container">
         <div class="main">
-            <div><img src="images/box1_img.jpg" alt="white chair claire"><div class="item_name"><p>Chair CLAIR</p></div></div>
-           <div><img src="images/box2_img.jpg" alt="white armchair margarita"><div class="item_name"><p>Chair MARGARITA</p></div></div>
+            <div><img src="images/box1_img.jpg" alt="white chair claire"><h5 class="item_name"><p>Chair CLAIR</p></h5></div>
+           <div><img src="images/box2_img.jpg" alt="white armchair margarita"><h5 class="item_name"><p>Chair MARGARITA</p></h5></div>
             <div class="thirdpic">
                 <h4>Finds all inputs</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></br><p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -157,9 +157,10 @@
             <div>
                 <img src="images/red_chair.png"> <br>
                 <form>
-                    <label>
-                        <input class="checkbox" type="checkbox" value="consent"><p class="consent"> Zgadzam się na przetwarzanie moich danych osobowych </p>
-                    </label><div class="checked"><img src="../images/form_ok.jpg"></div><br>
+                    <!--<label>-->
+                        <input class="checkbox" type="checkbox" value="consent" id="consent"><label for="consent"></label><p class="consent"> Zgadzam się na przetwarzanie <br> danych osobowych </p>
+                    <!--</label>-->
+
                     <input class="submit button" type="submit" value="Wyślij"/>
                 </form>
             </div>
@@ -176,10 +177,10 @@
             </div>
 
             <div class="socialmedia">
-                <img src="images/flickr.png">
-                <img src="images/vimeo.png">
-                <img src="images/pinterest.png">
-                <img src="images/twitter.png">
+                <a href="http://www.flickr.com"><img src="images/flickr.png"></a>
+                <a href="http://www.vimeo.com"><img src="images/vimeo.png"></a>
+                <a href="http://www.pinterest.com"><img src="images/pinterest.png"></a>
+                <a href="http://www.twitter.com"><img src="images/twitter.png"></a>
             </div>
 
             <div class="bottom_logo">
