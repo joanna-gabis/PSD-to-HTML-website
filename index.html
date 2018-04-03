@@ -21,7 +21,7 @@
                 <li><a href="#" id="ofirmie">o firmie</a>
                     <div class="submenu">
                         <ul class="ulsubmenu">
-                            <li><a href="#">Aktualności</a></li>
+                            <li><a href="#" id="aktualnosci">Aktualności</a></li>
                             <li><a href="#">Nasz team</a></li>
                             <li><a href="#">Historia</a></li>
                         </ul>
@@ -36,18 +36,31 @@
 <!-- jumbotron -->
 
     <header>
-        <div class="arrow color"><a href="#">
+        <div class="arrow color" id="prevpic"><a href="#">
             &lt; </a>
         </div>
-        <div class="header_img">
-            <img src="images/black_chair.png" alt="main picture black chair">
+
+        <div class="slider slider_visible">
+            <div class="header_img">
+                <img src="images/black_chair.png" alt="main picture black chair">
+            </div>
+            <div class="header_desc">
+                <h1>Sit <strong class="color">on</strong> our <strong class="color">chair</strong></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class=" learnmore button">Zobacz więcej</a>
+            </div>
         </div>
-        <div class="header_desc">
-            <h1>Sit <strong class="color">on</strong> our <strong class="color">chair</strong></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <a href="#" class=" learnmore button">Zobacz więcej</a>
+        <div class="slider hidden">
+            <div class="header_img">
+                <img src="images/orange_chair.png" alt="main picture orange chair">
+            </div>
+            <div class="header_desc">
+                <h1>Sit <strong class="color">on</strong> our <strong class="color">chair</strong></h1>
+                <p>Praesent vitae nisi id turpis ultrices vulputate varius eget augue. Nam facilisis tempus ex id tincidunt. Suspendisse auctor euismod nisi et rutrum. Vivamus semper magna eget vehicula dapibus. Vivamus ac mattis orci, id ornare neque.</p>
+                <a href="#" class=" learnmore button">Zobacz więcej</a>
+            </div>
         </div>
-        <div class="arrow color"><a href="#">
+        <div class="arrow color" id="nextpic"><a href="#">
             &gt; </a>
         </div>
     </header>
@@ -55,10 +68,10 @@
     <section>
     <div class="container">
         <div class="main">
-            <div><img src="images/box1_img.jpg" alt="white chair claire"><h5 class="item_name"><p>Chair CLAIR</p></h5></div>
-           <div><img src="images/box2_img.jpg" alt="white armchair margarita"><h5 class="item_name"><p>Chair MARGARITA</p></h5></div>
+            <div class="product"><img src="images/box1_img.jpg" alt="white chair claire"><h5 class="item_name"><p>Chair CLAIR</p></h5></div>
+           <div class="product"><img src="images/box2_img.jpg" alt="white armchair margarita"><h5 class="item_name"><p>Chair MARGARITA</p></h5></div>
             <div class="thirdpic">
-                <h4>Finds all inputs</h4>
+                <h5>Finds all inputs</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></br><p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
@@ -143,6 +156,81 @@
         </div>
    </section>
 
+<section class="application ">
+    <div class="container">
+        <section class="choice_part inline">
+            <!--<header>-->
+                <h4>SKOMPONUJ SWOJE KRZESŁO</h4>
+
+            <!--</header>-->
+
+            <div class="form">
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz rodzaj</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li class="chairname" data-price="200">Clair</li>
+                        <li class="chairname" data-price="250">Margarita</li>
+                        <li class="chairname" data-price="150">Selena</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz kolor</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li class="chaircolor">Czerwony</li>
+                        <li class="chaircolor">Czarny</li>
+                        <li class="chaircolor">Pomarańczowy</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz materiał</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li class="fabric">Tkanina</li>
+                        <li class="fabric">Skóra</li>
+                    </ul>
+                </div>
+                <div class="checkbox check-box">
+                    <input type="checkbox" id="transport" data-transport-price="200">
+                    <label for="transport">Transport</label>
+                </div>
+                <!--<div class="checkbox"></div>-->
+                <!--<span class="list_label inline_text">Transport</span>-->
+            </div>
+        </section>
+
+        <section class="image_part inline">
+            <img src="images/red_chair.png">
+        </section>
+
+        <section class="summary_part inline">
+            <!--<header class="align_right">-->
+                <h4>PODSUMOWANIE</h4>
+
+            <!--</header>-->
+
+            <div class="summary_panel">
+                <div class="panel_left">
+                    <h6 class="title">Twój fotel</h6>
+                    <span class="color"></span>
+                    <span class="pattern"></span>
+                    <span class="transport"></span>
+                </div>
+                <div class="panel_right">
+                    <h5 class="title value"></h5>
+                    <span class="color value"></span>
+                    <span class="pattern value"></span>
+                    <span class="transport value"></span>
+                </div>
+                <div class="sum_label">SUMA</div>
+                <div class="sum"><strong></strong></div>
+            </div>
+            <a href="" class="green_button">Zamawiam</a>
+        </section>
+    </div>
+</section>
+
     <section>
     <div class="container">
         <div><h2>Kontakt</h2></div>
@@ -190,6 +278,6 @@
         </footer>
     </div>
 
-
+<script src="app.js"></script>
 </body>
 </html>
